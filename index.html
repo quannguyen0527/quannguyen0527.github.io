@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quan Nguyen — Portfolio</title>
+  <meta name="description" content="Portfolio of Quan Nguyen: projects, experience, and resume." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">QN</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Quan Nguyen</h1>
+      <h2>Software engineer building fast, reliable systems — from matching engines to real-time apps.</h2>
+      <p class="lead">
+        I'm a Computer Science student at the University of Houston, graduating in December 2026.
+        I love algorithmic problem solving, and I'm especially drawn to finance and trading technology.
+        I recently built a real-time multiplayer trading game on top of an order matching engine I wrote from scratch.
+        I'm seeking new-grad software engineering roles starting in early 2027.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <!-- RESUME: uncomment when resume.pdf is added -->
+        <!-- <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download resume</a> -->
+      </div>
+    </section>
+
+    <!-- PROJECTS (rendered from script.js) -->
+    <section id="projects" class="container">
+      <h3 class="section-title">Projects</h3>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section id="experience" class="container">
+      <h3 class="section-title">Experience &amp; Education</h3>
+      <ol class="timeline">
+        <!-- TODO: add jobs/internships from resume above this line -->
+        <li>
+          <span class="date">Expected December 2026</span>
+          <h4>B.S. Computer Science · University of Houston</h4>
+          <p>Houston, TX</p>
+        </li>
+      </ol>
+      <!-- RESUME: uncomment when resume.pdf is added -->
+      <!-- <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Full resume (PDF)</a> -->
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+      <h3 class="section-title">Skills</h3>
+      <ul class="tags">
+        <li>Python</li><li>C++</li><li>JavaScript</li><li>HTML/CSS</li>
+        <li>FastAPI</li><li>WebSockets</li><li>Data Structures &amp; Algorithms</li>
+        <li>Unit Testing</li><li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h3 class="section-title">Get in touch</h3>
+      <p>I'm open to new opportunities. The fastest way to reach me is email.</p>
+      <a class="btn primary" href="mailto:quannguyen0527@gmail.com">quannguyen0527@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/quannguyen0527" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ngoc-minh-quan-nguyen-424320211/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Quan Nguyen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
