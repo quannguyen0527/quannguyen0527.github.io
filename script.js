@@ -1,14 +1,16 @@
 // ===== Edit your projects here =====
 // image: path to a screenshot (e.g. "images/project1.png"), or "" for none
+// note: optional small print under the links, or leave it out
 const projects = [
   {
     title: "Real-Time Multiplayer Trading Game",
     description:
-      "A multiplayer stock-trading game built on a from-scratch order book matching engine. " +
-      "Heap-based price-time priority matching, pre-trade risk checks, and live updates over WebSockets.",
-    tech: ["Python", "FastAPI", "WebSockets", "JavaScript"],
-    image: "",
-    demo: "",
+      "Trade against friends and bots in 3-minute rounds while news moves a hidden fair value. " +
+      "Built on a from-scratch order book matching engine with live WebSocket updates and 43 tests in CI.",
+    tech: ["Python", "FastAPI", "WebSockets", "JavaScript", "Canvas", "GitHub Actions"],
+    image: "images/trading-game.jpg",
+    demo: "https://byou-trading-game.onrender.com/",
+    note: "Free hosting: the demo may take ~30–60s to wake up on first visit.",
     code: "https://github.com/quannguyen0527/trading-game",
   },
 ];
@@ -28,6 +30,7 @@ grid.innerHTML = projects
           ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Live demo →</a>` : ""}
           ${p.code ? `<a href="${p.code}" target="_blank" rel="noopener">Code →</a>` : ""}
         </div>
+        ${p.note ? `<p class="card-note">${p.note}</p>` : ""}
       </div>
     </article>`
   )
